@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    background-color: #2d3748;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#signup{
+    background-color: #3bb3ac;
+    color: white;
+}
+
+#login{
+    border: 1px solid #3bb3ac;
+}
+
+button{
+    margin: 12px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+li{
+    list-style: none;
+    margin: 15px;
+}

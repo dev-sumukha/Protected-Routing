@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <>
         <Header />
-        <h1>Contact</h1>
+        <h1>Sign In</h1>
     </>
   )
 }

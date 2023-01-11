@@ -25,6 +25,7 @@ function App() {
             <Route path="/" element={<Home/>} />
             <Route path="/about" element={<About/>} />
           </Route>
+          
         </Routes>
       </BrowserRouter>
       {isLogin?"ನಮಸ್ಕಾರ ಮುಕ್ಲ್ಯಾ":""}

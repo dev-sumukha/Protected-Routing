@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import About from './About';
 import './App.css';
@@ -19,13 +19,15 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/signin" element={<SignIn/>} />
+          <Route path="/signin" element={<SignIn/>} />{/*Open for all users*/}
+          
           <Route element={<Protected isLogin={isLogin}/>}>
             <Route path="/" element={<Home/>} />
             <Route path="/about" element={<About/>} />
           </Route>
         </Routes>
       </BrowserRouter>
+      {isLogin?"ನಮಸ್ಕಾರ ಮುಕ್ಲ್ಯಾ":""}
       {isLogin?<button onClick={isAuth} >logout</button>:<button onClick={isAuth} >login</button>}
     </>
   );
